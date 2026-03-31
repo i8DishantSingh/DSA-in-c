@@ -9,22 +9,21 @@ typedef struct{
 }type_stack;
 
 
-// Initialize stack
+
 void initStack(type_stack *s) {
     s->top = -1;
 }
 
-// Check if stack is empty
+
 int isEmpty(type_stack *s) {
     return s->top == -1;
 }
 
-// Check if stack is full
+
 int isFull(type_stack *s) {
     return s->top == MAX - 1;
 }
 
-// Push an element onto the stack
 int push(type_stack *s, int value) {
     if (isFull(s)) {
         printf("Stack overflow\n");
@@ -34,7 +33,7 @@ int push(type_stack *s, int value) {
     return 1;
 }
 
-// Pop an element from the stack
+
 int pop(type_stack *s, int *popped) {
     if (isEmpty(s)) {
         printf("Stack underflow\n");
@@ -44,7 +43,6 @@ int pop(type_stack *s, int *popped) {
     return 1;
 }
 
-// Display elements in the stack
 void display(type_stack *s) {
     if (isEmpty(s)) {
         printf("Stack is empty\n");

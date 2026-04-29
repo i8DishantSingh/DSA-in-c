@@ -16,7 +16,7 @@ int main() {
     for(i=0;i<rows;i++){
         printf("Row no. %d:- ", i);
         for(j=0;j<columns;j++){
-            scanf("%d", &mat[i][j]);
+            scanf(" %d", &mat[i][j]);
         }
         printf("\n");
     }
